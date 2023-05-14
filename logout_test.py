@@ -1,3 +1,7 @@
+import pytest
+
+
+@pytest.mark.ibraz
 def testFirstMessage():
     print(f"This is for valid calculation")
 
