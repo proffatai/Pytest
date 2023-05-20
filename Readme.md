@@ -1,7 +1,5 @@
-## Working on different environments
-Assuming we want to run our test script in different envs for example say in 
-different browsers.
+## How to generate the report
+Navigate to the location of the pytest file and run the command `pytest --html=report.html` and the report
+will be generated in the same path.
 
-we can create a fixture and pass params=[env] as the argument. While creating 
-the fixture method, we have to pass `request` which will be used to access each 
-value inside the params via `request.param`
+You can proceed to open the report on your browser
