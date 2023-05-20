@@ -1,10 +1,5 @@
 import pytest
-@pytest.fixture()  #this declares the method as a fixture
-def myData():
-    print("Returning personal record................")
-    return ["Ibrahim","Fatai","proffatai@gmail.com"]
 
-@pytest.fixture()  #this declares the method as a fixture
-def occupation():
-    print("Returning occupation record................")
-    return ["QA Engineer","Babban Gona","Gitstart"]
+@pytest.fixture(params=[("chrome", "pifa","password"), ("firefox","Fatai"), "edge"]) # 3 params are passed
+def crossBrowser(request):
+    return request.param
