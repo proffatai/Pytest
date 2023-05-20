@@ -1,5 +1,5 @@
 import pytest
-@pytest.fixture() # this is to introduce precondition and postcondion
+@pytest.fixture() # This declares the method we wanna write below as a fixture. So pytest treats Calculate() as a fixture
 def Calculate(): # Note that the function name does not begin with test since its not a test case. Calculate () is used as a fixture here
     print("Before hook is running") # this will run first. This is the before hook
 
